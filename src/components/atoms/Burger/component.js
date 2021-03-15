@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
-import DotImage from '../../../assets/dot.svg';
-
-const rotate = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-`;
-
 const down = keyframes`
   0% {
     transform: translatey(0);
@@ -125,12 +114,6 @@ const Line = styled.div`
 
     ${({ selected }) => css`animation: ${ selected ? up : upReverse} 0.4s forwards;`}
   }
-`;
-
-const Dot = styled.img.attrs({
-  src: DotImage,
-})`
-  animation: ${rotate} 8s linear infinite;
 `;
 
 const Burger = () => {
