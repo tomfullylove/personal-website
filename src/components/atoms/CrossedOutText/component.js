@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import StrokeImage from '../../../assets/long-stroke.svg';
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,19 +16,21 @@ const Text = styled.h2`
   font-size: 128px;
 `;
 
-const Line = styled.div`
+const Stroke = styled.img.attrs({
+  src: StrokeImage,
+})`
   position: absolute;
-  background-color: #DB1162;
-  height: 15px;
-  width: 100%;
-  bottom: 40px;
+  height: 25px;
+  width: 430px;
+  left: -18px;
+  bottom: 30px;
 `;
 
 const CrossedOutText = () => {
   return (
     <Container>
       <Text>normal</Text>
-      <Line />
+      <Stroke />
     </Container>
   );
 }
