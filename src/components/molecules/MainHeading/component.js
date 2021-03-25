@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import StrokeOneImage from '../../../assets/stroke1.svg';
 import StrokeTwoImage from '../../../assets/stroke2.svg';
@@ -7,6 +7,7 @@ import StrokeTwoImage from '../../../assets/stroke2.svg';
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 580px;
 `;
 
 const TextRowContainer = styled.div`
@@ -23,7 +24,9 @@ const Text = styled.h2`
 const Stroke = styled.img`
   height: 80px;
   width: ${({ width }) => width || 20}em;
-  margin: 1.3em ${({ marginRight }) => marginRight || 1}em 0 ${({ marginLeft }) => marginLeft || 1}em;
+  margin-top: 1.3em;
+  margin-left: ${({ marginLeft }) => marginLeft || 1}em;
+  margin-right: ${({ marginRight }) => marginRight || 1}em;
 `;
 
 const MainHeading = () => {

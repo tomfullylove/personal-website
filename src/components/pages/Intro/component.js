@@ -20,7 +20,7 @@ const TitleContainer = styled.div`
   justify-content: center;
   position: relative;
   width: 70%;
-  min-width: 950px;
+  min-width: 990px;
   max-width: 2000px;
 `;
 
@@ -39,16 +39,16 @@ const TextContainer = styled.div`
 const Title = styled.h1`
   color: #F5ECEC;
   font-family: Crimson Pro;
-  font-size: 164px;
+  font-size: 180px;
   margin: 0;
 `;
 
 const Text = styled.p`
   color: #F5ECEC;
   font-family: Crimson Pro;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  margin: -16px 0 0 -14vh;
+  margin: -8px 0 0 -14vh;
   max-width: 740px;
 `;
 
@@ -62,8 +62,8 @@ const Intro = () => {
         <TextContainer>
           <Title>ff record</Title>
           <Text>
-            Web design pin craft beer viral health goth photo booth. 
-            Farm-to-table put a bird on it post-ironic, pug microdosing.
+            Cardiff based website development and design taken very unseriously,
+            because the internet should be fun, right?
           </Text>
         </TextContainer>
       </TitleContainer>
