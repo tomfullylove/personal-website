@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import StrokeOneImage from '../../../assets/stroke1.svg';
 import StrokeTwoImage from '../../../assets/stroke2.svg';
@@ -21,7 +21,9 @@ const Text = styled.h2`
   font-size: 108px;
 `;
 
-const Stroke = styled.img`
+const Stroke = styled.img.attrs({
+  draggable: false
+})`
   height: 80px;
   width: ${({ width }) => width || 20}em;
   margin-top: 1.3em;

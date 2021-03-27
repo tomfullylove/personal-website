@@ -55,6 +55,7 @@ const BlobRotate = styled.div`
 
 const Blob = styled.img.attrs({
   src: BlobImage,
+  draggable: false
 })`
   animation: ${floaty} 8s linear infinite;
   height: 55vh;

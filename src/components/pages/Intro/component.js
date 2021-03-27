@@ -44,7 +44,7 @@ const Title = styled.h1`
 `;
 
 const Text = styled.p`
-  color: #F5ECEC;
+  color: #E6DADA;
   font-family: Crimson Pro;
   font-size: 20px;
   font-weight: 600;

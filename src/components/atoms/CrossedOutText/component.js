@@ -18,6 +18,7 @@ const Text = styled.h2`
 
 const Stroke = styled.img.attrs({
   src: StrokeImage,
+  draggable: false
 })`
   position: absolute;
   height: 25px;

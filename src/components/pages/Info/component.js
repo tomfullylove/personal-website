@@ -15,6 +15,7 @@ const Container = styled.div`
   min-height: 100vh;
   width: 100%;
   max-width: 2500px;
+  margin-bottom: 20vh;
 `;
 
 const Content = styled.div`
@@ -58,7 +59,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardText = styled.p`
-  color: #F5ECEC;
+  color: #E6DADA;
   font-family: Lato;
   font-size: 14px;
   letter-spacing: 0.6px;
@@ -84,7 +85,8 @@ const ImageTopText = styled.p`
 `;
 
 const ImageTop = styled.img.attrs({
-  src: PaintingTwo
+  src: PaintingTwo,
+  draggable: false
 })`
   height: auto;
   width: 100%;
@@ -111,7 +113,8 @@ const ImageBottomText = styled.p`
 `;
 
 const ImageBottom = styled.img.attrs({
-  src: PaintingOne
+  src: PaintingOne,
+  draggable: false
 })`
   height: auto;
   width: 100%;
