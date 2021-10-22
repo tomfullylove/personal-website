@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
+interface LineProps {
+  selected: boolean;
+}
+
 const down = keyframes`
   0% {
     transform: translatey(0);
@@ -96,10 +100,10 @@ const Container = styled.div`
   animation: ${fade} 1s forwards;
 `;
 
-const Line = styled.div`
+const Line = styled.div<LineProps>`
   height: 3px;
   width: 30px;
-  background-color: #F5ECEC;
+  background-color: #000;
   border-radius: 3px;
 
   ${({ selected }) => css`animation: ${ selected ? center : centerReverse} 0.4s forwards;`}
@@ -116,7 +120,7 @@ const Line = styled.div`
   }
 `;
 
-const Burger = () => {
+const Burger: React.FC = () => {
   const [ selected, setSelected] = useState(false);
   return (
     <>
