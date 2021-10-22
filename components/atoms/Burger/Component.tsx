@@ -10,19 +10,19 @@ const down = keyframes`
     transform: translatey(0);
   }
   50% {
-    transform: translatey(11px);
+    transform: translatey(13px);
   }
   100% {
-    transform: translatey(11px) rotate(45deg);
+    transform: translatey(13px) rotate(45deg);
   }
 `;
 
 const downReverse = keyframes`
   0% {
-    transform: translatey(11px) rotate(45deg);
+    transform: translatey(13px) rotate(45deg);
   }
   50% {
-    transform: translatey(11px) rotate(0);
+    transform: translatey(13px) rotate(0);
   }
   100% {
     transform: translatey(0) rotate(0);
@@ -34,19 +34,19 @@ const up = keyframes`
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-11px);
+    transform: translatey(-13px);
   }
   100% {
-    transform: translatey(-11px) rotate(-45deg);
+    transform: translatey(-13px) rotate(-45deg);
   }
 `;
 
 const upReverse = keyframes`
   0% {
-    transform: translatey(-11px) rotate(-45deg);
+    transform: translatey(-13px) rotate(-45deg);
   }
   50% {
-    transform: translatey(-11px) rotate(0);
+    transform: translatey(-13px) rotate(0);
   }
   100% {
     transform: translatey(0) rotate(0);
@@ -101,9 +101,9 @@ const Container = styled.div`
 `;
 
 const Line = styled.div<LineProps>`
-  height: 3px;
-  width: 30px;
-  background-color: #000;
+  height: 5px;
+  width: 36px;
+  background-color: #363030;
   border-radius: 3px;
 
   ${({ selected }) => css`animation: ${ selected ? center : centerReverse} 0.4s forwards;`}

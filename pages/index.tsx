@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { Intro } from '../components/sections';
 
 const Index = () => {
   return (
@@ -6,7 +7,7 @@ const Index = () => {
       <Head>
         <title>Tom Fullylove</title>
       </Head>
-      <></>
+      <Intro />
     </>
   )
 };
