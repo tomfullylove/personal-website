@@ -21,7 +21,7 @@ const TitleContainer = styled.div`
 const BackgroundTitleContainer = styled(motion.div).attrs({
   initial: { opacity: 0 },
   whileInView: { opacity: 1 },
-  transition: { delay: 0.2 },
+  transition: { delay: 0.3 },
   viewport: { once: true },
 })`
 `;
@@ -35,7 +35,7 @@ const Title = styled.h1`
 const TextContainer = styled(motion.div).attrs({
   initial: { y: 40, opacity: 0 },
   whileInView: { y: 0, opacity: 1 },
-  transition: { delay: 0.4 },
+  transition: { delay: 0.6 },
   viewport: { once: true },
 })`
   margin: -40px 0 0 40px;
