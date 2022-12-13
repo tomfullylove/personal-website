@@ -33,7 +33,7 @@ const Title = styled.h1`
 `;
 
 const TextContainer = styled(motion.div).attrs({
-  initial: { y: 40, opacity: 0 },
+  initial: { y: 64, opacity: 0 },
   whileInView: { y: 0, opacity: 1.2 },
   transition: { delay: 1 },
   viewport: { once: true },
