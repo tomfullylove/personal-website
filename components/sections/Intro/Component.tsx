@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion';
 
 const Container = styled.div`
   display: flex;
@@ -17,13 +18,26 @@ const TitleContainer = styled.div`
   width: 65%;
 `;
 
+const BackgroundTitleContainer = styled(motion.div).attrs({
+  initial: { opacity: 0 },
+  whileInView: { opacity: 1 },
+  transition: { delay: 0.2 },
+  viewport: { once: true },
+})`
+`;
+
 const Title = styled.h1`
   color: #e6e6e6;
   font-family: 'Pacifico', cursive;
   font-size: 125px;
 `;
 
-const TextContainer = styled.div`
+const TextContainer = styled(motion.div).attrs({
+  initial: { y: 40, opacity: 0 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { delay: 0.4 },
+  viewport: { once: true },
+})`
   margin: -40px 0 0 40px;
   max-width: 650px;
   display: flex;
@@ -60,7 +74,9 @@ const Intro = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title>Howdy</Title>
+        <BackgroundTitleContainer>
+          <Title>Howdy</Title>
+        </BackgroundTitleContainer>
         <TextContainer>
           <Text>
             I’m Tom Fullylove 👋 a full stack software engineer
