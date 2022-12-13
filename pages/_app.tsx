@@ -2,7 +2,6 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../utils/theme';
-import { Burger } from '../components/atoms';
 
 const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,7 +68,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Burger />
         <Wrapper>
           <Component {...pageProps} />
         </Wrapper>
