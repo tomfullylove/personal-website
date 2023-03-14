@@ -1,13 +1,14 @@
 import Head from 'next/head';
-import { Intro } from '../components/sections';
+import { Intro, Experience } from '../components/sections';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <>
       <Head>
         <title>Tom Fullylove</title>
       </Head>
       <Intro />
+      <Experience />
     </>
   )
 };

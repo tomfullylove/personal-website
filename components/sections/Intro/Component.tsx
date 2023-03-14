@@ -1,104 +1,128 @@
-import styled from 'styled-components'
-import { motion } from 'framer-motion';
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  max-height: 1000px;
+
+  width: 100vw;
+
+  max-width: 2500px;
 `;
 
-const TitleContainer = styled.div`
+const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 65%;
+  flex-direction: row;
+  margin: 64px;
+
+  flex-grow: 1;
+  position: relative;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    margin: 64px 32px 0;
+  }
 `;
 
-const BackgroundTitleContainer = styled(motion.div).attrs({
-  initial: { opacity: 0 },
-  whileInView: { opacity: 1 },
-  transition: { delay: 0.2 },
-  viewport: { once: true },
-})`
+const ImageContainer = styled.div`
+  background: url("example.jpg");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+
+  max-width: 600px;
+  flex-grow: 1;
+
+  border-radius: 8px;
+
+  @media (max-width: 800px) {
+    order: 2;
+  }
+
+  @media (max-width: 600px) {
+    background-size: 100vw;
+  }
 `;
 
 const Title = styled.h1`
-  color: #e6e6e6;
-  font-family: 'Pacifico', cursive;
-  font-size: 125px;
+  margin: 32px 0 0 64px;
+
+  font-family: Crimson Pro;
+  color: #e6dada;
+  font-weight: 900;
+  font-size: 160px;
+
+  line-height: 110px;
+  letter-spacing: -7px;
+  align-self: flex-start;
+
+  @media (max-width: 1150px) {
+    font-size: 120px;
+    line-height: 85px;
+    letter-spacing: -5px;
+  }
+
+  @media (max-width: 800px) {
+    margin: 0 0 32px;
+    order: 1;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 90px;
+    line-height: 65px;
+    letter-spacing: -3px;
+  }
 `;
 
-const TextContainer = styled(motion.div).attrs({
-  initial: { y: 64, opacity: 0 },
-  whileInView: { y: 0, opacity: 1.2 },
-  transition: { delay: 1 },
-  viewport: { once: true },
-})`
-  margin: -40px 0 0 40px;
-  max-width: 650px;
-  display: flex;
-  flex-direction: column;
+const Highlight = styled.span`
+  color: #ff2167;
+`;
+
+const TextContainer = styled.div`
+  max-width: 300px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @media (max-width: 800px) {
+    position: relative;
+    order: 3;
+    margin-top: 32px;
+    max-width: 450px;
+  }
 `;
 
 const Text = styled.p`
-  color: #363030;
   font-family: Crimson Pro;
-  font-size: 20px;
+  color: #e6dada;
+
   font-weight: 800;
+
+  font-size: 28px;
   line-height: 30px;
-  margin-bottom: 16px;
 `;
 
-const IconContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 32px 15% 0;
-`;
-
-const Icon = styled.img`
-  height: 32px;
-  width: auto;
-`;
-
-const Link = styled.a`
-  color: #b823fc;
-  text-decoration: none;
-`;
-
-const Intro = () => {
+const Intro: React.FC = () => {
   return (
     <Container>
-      <TitleContainer>
-        <BackgroundTitleContainer>
-          <Title>Howdy</Title>
-        </BackgroundTitleContainer>
+      <Content>
+        <ImageContainer />
+        <Title>
+          <Highlight>TOM</Highlight> <br /> FULLY- <br /> LOVE
+        </Title>
         <TextContainer>
-          <Text>
-            I’m Tom Fullylove 👋 a full stack software engineer
-            <Link href="https://www.veygo.com" target="_blank" rel="noreferrer"> at Veygo </Link>
-            based in Cardiff, working on everything from React
-            frontends and Django backends to micro-services
-            and APIs on AWS.
-          </Text>
-          <Text>
-            Feel free to check out my countless half-finished
-            github projects, fairly boring linkedin profile
-            or get in touch at
-            <Link href="mailto: tom@fullylove.co.uk"> tom@fullylove.co.uk </Link>
-          </Text>
-          <IconContainer>
-            <a href="https://github.com/tomfullylove" target="_blank" rel="noreferrer"><Icon src="/github.png" /></a>
-            <a href="https://www.linkedin.com/in/tom-fullylove-6a382a189/" target="_blank" rel="noreferrer"><Icon src="/linkedin.png" /></a>
-          </IconContainer>
+          <Text>Hey 👋 I’m a full stack engineer based in Cardiff, Wales.</Text>
         </TextContainer>
-      </TitleContainer>
+      </Content>
     </Container>
-  )
+  );
 };
 
 export default Intro;
