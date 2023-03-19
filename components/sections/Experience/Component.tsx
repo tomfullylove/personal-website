@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 
 import { Card, Title } from "../../atoms";
@@ -126,13 +125,23 @@ const Intro: React.FC = () => {
                   </Link>
                 </CardTitle>
                 <CardText>
-                  Poutine 3 wolf moon YOLO slow-carb, single-origin coffee raw
-                  denim trust fund fanny pack selvage occupy four loko
-                  post-ironic mukbang. <br /> <br /> Cupping iceland leggings
-                  single-origin coffee shoreditch. Hell of blog leggings neutral
-                  milk hotel shoreditch portland sus lyft taxidermy grailed man
-                  bun mlkshk yuccie ascot. <br /> <br /> Shabby chic PBR&B
-                  activated charcoal swag.
+                  Being part of such a fantastic group of people really helped
+                  me learn and progress as an engineer from the time I started as
+                  a junior.
+                  <br /> <br />
+                  Feel incredibly lucky to have been involved in lots of
+                  different projects, from rebuilding our
+                  React Native app to our transition from
+                  django backends to micro-services utilizing API Gateways,
+                  lambdas and serverless frameworks in AWS.
+                  <br /> <br />
+                  Currently working on our core insurance products and heavily
+                  involved in feature planning and technical implementation
+                  across both our React and Django apps.
+                  <br /> <br />
+                  Getting the chance to mentor junior engineers and help support
+                  a team has also been a awesome experience while really helping
+                  me grow as a person.
                 </CardText>
               </CardContent>
             </CardContainer>

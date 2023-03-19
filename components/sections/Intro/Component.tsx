@@ -31,10 +31,10 @@ const Content = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  background: url("example.jpg");
+  background: url("me.JPG");
   background-size: 600px;
+  background-position: center; 
   background-repeat: no-repeat;
-  filter: grayscale(1);
 
   max-width: 600px;
   flex-grow: 1;
