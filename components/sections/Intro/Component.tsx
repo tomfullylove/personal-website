@@ -5,11 +5,15 @@ const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   min-height: 800px;
-  max-height: 1000px;
+  max-height: 930px;
 
   width: 100vw;
 
   max-width: 2500px;
+
+  @media (max-width: 800px) {
+    min-height: 900px;
+  }
 `;
 
 const Content = styled.div`

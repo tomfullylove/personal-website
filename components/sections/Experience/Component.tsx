@@ -7,7 +7,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  min-height: 60vh;
   width: 100vw;
   max-width: 2500px;
 `;
@@ -16,7 +15,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: row;
 
-  margin: 128px;
+  margin: 64px 128px;
 
   flex-grow: 1;
 
@@ -25,7 +24,7 @@ const Content = styled.div`
   }
 
   @media (max-width: 710px) {
-    margin: 128px 32px;
+    margin: 64px 32px;
   }
 `;
 
@@ -43,9 +42,9 @@ const TextContainer = styled.div`
 const Text = styled.p`
   font-family: Crimson Pro;
   color: #e6dada;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 26px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 25px;
 `;
 
 const Highlight = styled.span`
@@ -75,7 +74,7 @@ const CardContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 0 0 0 32px;
+  margin: 16px 0 16px 32px;
 `;
 
 const CardTitle = styled.h3`
@@ -104,7 +103,7 @@ const Intro: React.FC = () => {
         <Title text="EXPERIENCE" />
         <TextContainer>
           <Text>
-            Working as a full stack engineer <Highlight>( </Highlight>
+            Have been a full stack engineer <Highlight>( </Highlight>
             with an affinity for design and all things front-end
             <Highlight> )</Highlight> since 2019 after graduating with a BSc in
             Computer Science from Loughborough University 🧑‍🎓
@@ -125,15 +124,14 @@ const Intro: React.FC = () => {
                   </Link>
                 </CardTitle>
                 <CardText>
-                  Being part of such a fantastic group of people really helped
-                  me learn and progress as an engineer from the time I started as
-                  a junior.
+                  Being part of such a fantastic group of people has really
+                  helped me learn and progress as an engineer from the time I
+                  started as a junior.
                   <br /> <br />
-                  Feel incredibly lucky to have been involved in lots of
-                  different projects, from rebuilding our
-                  React Native app to our transition from
-                  django backends to micro-services utilizing API Gateways,
-                  lambdas and serverless frameworks in AWS.
+                  Incredibly lucky to have been involved in lots of different
+                  projects, from rebuilding our React Native app to our
+                  transition from Django backends to micro-services utilizing
+                  API Gateways, lambdas and serverless frameworks in AWS.
                   <br /> <br />
                   Currently working on our core insurance products and heavily
                   involved in feature planning and technical implementation

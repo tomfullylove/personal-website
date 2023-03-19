@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Intro, Experience } from '../components/sections';
+import { Intro, Experience, Links } from '../components/sections';
 
 const Index: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ const Index: React.FC = () => {
         <title>Tom Fullylove</title>
       </Head>
       <Intro />
+      <Links />
       <Experience />
     </>
   )
