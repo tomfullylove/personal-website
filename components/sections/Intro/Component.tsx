@@ -122,7 +122,7 @@ const Intro: React.FC = () => {
           <Highlight>TOM</Highlight> <br /> FULLY- <br /> LOVE
         </Title>
         <TextContainer>
-          <Text>Hey 👋 I’m a full stack engineer based in Cardiff, Wales.</Text>
+          <Text>Hey! 👋 I’m a full stack engineer based in Cardiff, Wales.</Text>
         </TextContainer>
       </Content>
     </Container>
