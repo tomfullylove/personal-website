@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
+
+import CanvasDraw from "react-canvas-draw";
 
 const Container = styled.div`
   display: flex;
@@ -37,8 +40,12 @@ const Content = styled.div`
 const ImageContainer = styled.div`
   background: url("me.JPG");
   background-size: 600px;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
+
+  display: inline-block;
+
+  overflow: hidden;
 
   max-width: 600px;
   flex-grow: 1;
@@ -114,15 +121,36 @@ const Text = styled.p`
 `;
 
 const Intro: React.FC = () => {
+  const [windowSize, setWindowSize] = useState(800);
+
+  useEffect(() => {
+    setWindowSize(window.innerWidth);
+  }, []);
+
   return (
     <Container>
       <Content>
-        <ImageContainer />
+        <ImageContainer>
+          {windowSize >= 800 && (
+            <CanvasDraw
+              style={{ position: "relative", height: "100%", width: "100%" }}
+              brushColor="#ff2167"
+              lazyRadius={3}
+              brushRadius={5}
+              hideGrid
+              backgroundColor="rgba(255,0,0,0.0)"
+              canvasWidth={600}
+              canvasHeight={800}
+            />
+          )}
+        </ImageContainer>
         <Title>
           <Highlight>TOM</Highlight> <br /> FULLY- <br /> LOVE
         </Title>
         <TextContainer>
-          <Text>Hey! 👋 I’m a full stack engineer based in Cardiff, Wales.</Text>
+          <Text>
+            Hey! 👋 I’m a full stack engineer based in Cardiff, Wales.
+          </Text>
         </TextContainer>
       </Content>
     </Container>
