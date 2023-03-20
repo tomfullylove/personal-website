@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import CanvasDraw from "react-canvas-draw";
@@ -121,21 +121,28 @@ const Text = styled.p`
 `;
 
 const Intro: React.FC = () => {
-  const imageRef = useRef<HTMLDivElement>(null);
+  const [windowSize, setWindowSize] = useState(800);
+
+  useEffect(() => {
+    setWindowSize(window.innerWidth);
+  }, []);
+
   return (
     <Container>
       <Content>
-        <ImageContainer ref={imageRef}>
-          <CanvasDraw
-            style={{ position: "relative", height: "100%", width: "100%" }}
-            brushColor="#ff2167"
-            lazyRadius={3}
-            brushRadius={5}
-            hideGrid
-            backgroundColor="rgba(255,0,0,0.0)"
-            canvasWidth={600}
-            canvasHeight={800}
-          />
+        <ImageContainer>
+          {windowSize >= 800 && (
+            <CanvasDraw
+              style={{ position: "relative", height: "100%", width: "100%" }}
+              brushColor="#ff2167"
+              lazyRadius={3}
+              brushRadius={5}
+              hideGrid
+              backgroundColor="rgba(255,0,0,0.0)"
+              canvasWidth={600}
+              canvasHeight={800}
+            />
+          )}
         </ImageContainer>
         <Title>
           <Highlight>TOM</Highlight> <br /> FULLY- <br /> LOVE
