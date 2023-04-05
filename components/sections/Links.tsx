@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Card } from "../../atoms";
+import { Card } from "@components/atoms";
 
 const Container = styled.div`
   display: flex;

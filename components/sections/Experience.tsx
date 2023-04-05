@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import { Card, Title } from "../../atoms";
-import { IconList, Timeline } from "../../molecules";
+import { IconList, Timeline } from "@components/molecules";
+import { Card, Title } from "@components/atoms";
 
 const Container = styled.div`
   display: flex;
