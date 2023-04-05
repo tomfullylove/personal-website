@@ -29,14 +29,11 @@ const Content = styled.div`
   flex-grow: 1;
 `;
 
-const CardContainer = styled.div`
-`;
-
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 16px 64px;
+  margin: 0 32px;
 
   @media (max-width: 600px) {
     margin: 8px;
@@ -74,32 +71,29 @@ const Intro: React.FC = () => {
   return (
     <Container>
       <Content>
-        <CardContainer>
-          <Card>
-            <TextContainer>
-              <Text>
-                Check out my half-finished projects and fairly boring linkedin
-                profile
-              </Text>
-              <IconContainer>
-                <a
-                  href="https://github.com/tomfullylove"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Icon src="/github.svg" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/tom-fullylove-6a382a189/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Icon src="/linkedin.svg" alt="Linkedin Logo"/>
-                </a>
-              </IconContainer>
-            </TextContainer>
-          </Card>
-        </CardContainer>
+        <Card>
+          <TextContainer>
+            <Text>
+              Check out my half-finished projects and fairly boring linkedin
+            </Text>
+            <IconContainer>
+              <a
+                href="https://github.com/tomfullylove"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon src="/github.svg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tom-fullylove-6a382a189/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon src="/linkedin.svg" alt="Linkedin Logo" />
+              </a>
+            </IconContainer>
+          </TextContainer>
+        </Card>
       </Content>
     </Container>
   );
