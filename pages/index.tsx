@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Intro, Experience, Links } from '@components/sections';
+import { Intro, Experience, Links, Footer } from '@components/sections';
 
 const Index: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ const Index: React.FC = () => {
       <Intro />
       <Links />
       <Experience />
+      <Footer />
     </>
   )
 };

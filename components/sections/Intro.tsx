@@ -9,9 +9,7 @@ const Container = styled.div`
   height: 100vh;
   min-height: 800px;
   max-height: 930px;
-
   width: 100vw;
-
   max-width: 2500px;
 
   @media (max-width: 800px) {
@@ -23,7 +21,6 @@ const Content = styled.div`
   display: flex;
   flex-direction: row;
   margin: 64px;
-
   flex-grow: 1;
   position: relative;
 
@@ -42,14 +39,10 @@ const ImageContainer = styled.div`
   background-size: 600px;
   background-position: center;
   background-repeat: no-repeat;
-
   display: inline-block;
-
   overflow: hidden;
-
   max-width: 600px;
   flex-grow: 1;
-
   border-radius: 8px;
 
   @media (max-width: 800px) {
@@ -63,12 +56,10 @@ const ImageContainer = styled.div`
 
 const Title = styled.h1`
   margin: 32px 0 0 64px;
-
   font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 900;
   font-size: 160px;
-
   line-height: 110px;
   letter-spacing: -7px;
   align-self: flex-start;
@@ -97,7 +88,6 @@ const Highlight = styled.span`
 
 const TextContainer = styled.div`
   max-width: 300px;
-
   position: absolute;
   bottom: 0;
   right: 0;
@@ -113,9 +103,7 @@ const TextContainer = styled.div`
 const Text = styled.p`
   font-family: Crimson Pro;
   color: #e6dada;
-
   font-weight: 800;
-
   font-size: 28px;
   line-height: 30px;
 `;

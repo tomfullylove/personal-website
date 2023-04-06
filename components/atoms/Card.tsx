@@ -6,9 +6,7 @@ interface Props {
 
 const Container = styled.div`
   background-color: #1a1816;
-
   padding: 32px;
-
   border-radius: 16px;
 `;
 

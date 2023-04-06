@@ -6,7 +6,6 @@ import { Card, Title } from "@components/atoms";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-
   width: 100vw;
   max-width: 2500px;
 `;
@@ -14,9 +13,7 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
-
-  margin: 64px 128px;
-
+  margin: 64px 128px 0;
   flex-grow: 1;
 
   @media (max-width: 1250px) {
@@ -24,14 +21,13 @@ const Content = styled.div`
   }
 
   @media (max-width: 710px) {
-    margin: 64px 32px;
+    margin: 64px 32px 0;
   }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   margin: 132px 0 0 64px;
 
   @media (max-width: 1250px) {
@@ -55,25 +51,22 @@ const Highlight = styled.span`
 const Link = styled.a`
   font-family: Crimson Pro;
   color: #ff2167;
-
   cursor: pointer;
 `;
 
 const Spacer = styled.div`
-  height: 100px;
+  height: 64px;
 `;
 
 const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
-
   align-items: center;
 `;
 
 const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-
   margin: 16px 0 16px 32px;
 `;
 
@@ -82,9 +75,7 @@ const CardTitle = styled.h3`
   color: #e6dada;
   font-weight: 900;
   font-size: 40px;
-
   letter-spacing: -3px;
-
   margin: 0 0 16px;
 `;
 
@@ -96,7 +87,7 @@ const CardText = styled.p`
   line-height: 26px;
 `;
 
-const Intro: React.FC = () => {
+const Experience: React.FC = () => {
   return (
     <Container>
       <Content>
@@ -108,6 +99,18 @@ const Intro: React.FC = () => {
             <Highlight> )</Highlight> since 2019 after graduating with a BSc in
             Computer Science from Loughborough University 🧑‍🎓
           </Text>
+          <Spacer />
+          <Text>Working (mostly) with the following stack atm</Text>
+          <IconList
+            icons={[
+              { src: "./react-icon.svg", alt: "React Framework Logo" },
+              { src: "./ts-icon.svg", alt: "Typescript Logo" },
+              { src: "./django-icon.svg", alt: "Django Framework Logo" },
+              { src: "./python-icon.svg", alt: "Python Logo" },
+              { src: "./circleci-icon.svg", alt: "CircleCI Logo" },
+              { src: "./aws-icon.svg", alt: "Amazon Web Services Logo" },
+            ]}
+          />
           <Spacer />
           <Card>
             <CardContainer>
@@ -145,21 +148,10 @@ const Intro: React.FC = () => {
             </CardContainer>
           </Card>
           <Spacer />
-          <Text>Working (mostly) with the following stack atm</Text>
-          <IconList
-            icons={[
-              { src: "./react-icon.svg", alt: "React Framework Logo" },
-              { src: "./ts-icon.svg", alt: "Typescript Logo" },
-              { src: "./django-icon.svg", alt: "Django Framework Logo" },
-              { src: "./python-icon.svg", alt: "Python Logo" },
-              { src: "./circleci-icon.svg", alt: "CircleCI Logo" },
-              { src: "./aws-icon.svg", alt: "Amazon Web Services Logo" },
-            ]}
-          />
         </TextContainer>
       </Content>
     </Container>
   );
 };
 
-export default Intro;
+export default Experience;

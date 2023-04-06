@@ -7,7 +7,6 @@ interface Props {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-
   max-width: fit-content;
 `;
 
@@ -16,16 +15,13 @@ const Text = styled.h1`
   color: #e6dada;
   font-weight: 900;
   font-size: 60px;
-
   letter-spacing: -4px;
 `;
 
 const Line = styled.div`
   width: 45%;
   height: 8px;
-
   background-color: #ff2167;
-
   align-self: flex-end;
 `;
 

@@ -22,16 +22,13 @@ const Text = styled.div<StyledProps>`
   color: ${({ color }) => color || "#887e7e"};
   font-weight: 800;
   font-size: 24px;
-
   letter-spacing: -2px;
-
   margin: 8px 0;
 `;
 
 const Circle = styled.div<StyledProps>`
   border: 3px solid ${({ color }) => color || "#887e7e"};
   border-radius: 50%;
-
   width: 6px;
   height: 6px;
 `;
@@ -39,7 +36,6 @@ const Circle = styled.div<StyledProps>`
 const Line = styled.div`
   width: 3px;
   height: 110px;
-
   background-color: #887e7e;
 `;
 
