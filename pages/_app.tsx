@@ -1,7 +1,13 @@
 import React from 'react';
 import { AppProps } from 'next/app';
+import { Crimson_Pro } from "next/font/google";
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import theme from '../utils/theme';
+
+const crimsonPro = Crimson_Pro({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,7 +75,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Wrapper>
+        <Wrapper className={crimsonPro.className}>
           <Component {...pageProps} />
         </Wrapper>
       </ThemeProvider>

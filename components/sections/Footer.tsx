@@ -17,7 +17,6 @@ const Content = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 800;
   font-size: 22px;

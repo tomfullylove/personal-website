@@ -56,7 +56,6 @@ const ImageContainer = styled.div`
 
 const Title = styled.h1`
   margin: 32px 0 0 64px;
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 900;
   font-size: 160px;
@@ -101,7 +100,6 @@ const TextContainer = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 800;
   font-size: 28px;

@@ -11,7 +11,6 @@ const Container = styled.div`
 `;
 
 const Text = styled.h1`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 900;
   font-size: 60px;

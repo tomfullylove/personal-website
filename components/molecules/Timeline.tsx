@@ -18,7 +18,6 @@ const Container = styled.div`
 `;
 
 const Text = styled.div<StyledProps>`
-  font-family: Crimson Pro;
   color: ${({ color }) => color || "#887e7e"};
   font-weight: 800;
   font-size: 24px;

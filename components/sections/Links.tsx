@@ -38,7 +38,6 @@ const TextContainer = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 800;
   font-size: 22px;
@@ -47,7 +46,6 @@ const Text = styled.p`
 `;
 
 const Link = styled.a`
-  font-family: Crimson Pro;
   color: #ff2167;
   cursor: pointer;
 `;

@@ -36,7 +36,6 @@ const TextContainer = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 800;
   font-size: 22px;
@@ -49,7 +48,6 @@ const Highlight = styled.span`
 `;
 
 const Link = styled.a`
-  font-family: Crimson Pro;
   color: #ff2167;
   cursor: pointer;
 `;
@@ -71,7 +69,6 @@ const CardContent = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 900;
   font-size: 40px;
@@ -80,7 +77,6 @@ const CardTitle = styled.h3`
 `;
 
 const CardText = styled.p`
-  font-family: Crimson Pro;
   color: #e6dada;
   font-weight: 500;
   font-size: 20px;
