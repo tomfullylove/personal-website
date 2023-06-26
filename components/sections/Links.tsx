@@ -17,11 +17,7 @@ const Content = styled.div`
   margin: 64px 128px;
 
   @media (max-width: 900px) {
-    margin: 64px 64px 0;
-  }
-
-  @media (max-width: 600px) {
-    margin: 64px 32px 0;
+    margin: 64px;
   }
 `;
 
