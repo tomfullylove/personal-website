@@ -6,7 +6,7 @@ import CanvasDraw from "react-canvas-draw";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   min-height: 800px;
   max-height: 930px;
   width: 100vw;
@@ -107,7 +107,7 @@ const Text = styled.p`
 `;
 
 const Intro: React.FC = () => {
-  const [windowSize, setWindowSize] = useState(800);
+  const [windowSize, setWindowSize] = useState(799);
 
   useEffect(() => {
     setWindowSize(window.innerWidth);

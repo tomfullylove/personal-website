@@ -13,15 +13,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   align-self: center;
   margin: 32px 0;
+  width: 100%;
+
+  max-width: 900px;
 `;
 
 const Icon = styled.img`
   height: auto;
   width: 32px;
-  margin: 16px 32px 0;
+  margin: 16px 8px 0;
 `;
 
 const IconList: React.FC<Props> = ({ icons }) => {

@@ -12,7 +12,7 @@ const Content = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 64px 128px;
+  margin: 0 128px 64px;
   flex-grow: 1;
 `;
 

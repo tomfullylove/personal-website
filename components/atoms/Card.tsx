@@ -6,8 +6,13 @@ interface Props {
 
 const Container = styled.div`
   background-color: #1a1816;
-  padding: 32px;
+  padding: 48px;
   border-radius: 16px;
+
+  @media (max-width: 600px) {
+    padding: 32px 16px;
+  }
+
 `;
 
 const Card: React.FC<Props> = ({ children }) => {
