@@ -131,7 +131,7 @@ const Intro: React.FC = () => {
           )}
         </ImageContainer>
         <Title>
-          <Highlight>TOM</Highlight> <br /> FULLY- <br /> LOVE
+          <Highlight>TOM</Highlight> <br /> FULLY <br /> LOVE
         </Title>
         <TextContainer>
           <Text>
