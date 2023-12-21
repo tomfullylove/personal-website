@@ -1,12 +1,19 @@
-import React from 'react';
-import { AppProps } from 'next/app';
-import { Crimson_Pro } from "next/font/google";
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
-import theme from '../utils/theme';
+import React from "react";
+import { AppProps } from "next/app";
+import { League_Gothic, Crimson_Pro } from "next/font/google";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import theme from "../utils/theme";
+
+export const leagueGothic = League_Gothic({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-league",
+});
 
 const crimsonPro = Crimson_Pro({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-crimson",
 });
 
 const GlobalStyle = createGlobalStyle`
@@ -52,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
   body {
-    background-color: #0F0E0D;
+    background-color: #fffcfa;
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -71,7 +78,7 @@ const Wrapper = styled.div`
 `;
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return  (
+  return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
@@ -81,6 +88,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       </ThemeProvider>
     </>
   );
-}
+};
 
-export default App
+export default App;

@@ -1,5 +1,6 @@
-import Head from 'next/head';
-import { Intro, Links, Footer } from '@components/sections';
+import Head from "next/head";
+
+import Intro from "@components/sections/intro";
 
 const Index: React.FC = () => {
   return (
@@ -8,10 +9,8 @@ const Index: React.FC = () => {
         <title>Tom Fullylove</title>
       </Head>
       <Intro />
-      <Links />
-      <Footer />
     </>
-  )
+  );
 };
 
 export default Index;
