@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import CanvasDraw from "react-canvas-draw";
+
 import { leagueGothic } from "../../pages/_app";
 
 const Wrapper = styled.div`
@@ -82,35 +84,55 @@ const Image = styled.img.attrs({
   src: "tom.jpg",
   alt: "a picture of me (looking great)",
 })`
-  height: 550px;
+  height: 100%;
+  width: 100%;
+
   border-radius: 16px;
+  position: absolute;
+`;
+
+const CanvasContainer = styled.div`
+  height: 550px;
+  width: 380px;
+  border-radius: 16px;
+
+  background-size: cover;
+  overflow: hidden;
 
   margin-right: 500px;
 
   position: absolute;
-  z-index: -1;
+
+  z-index: 2;
 
   transform: rotate(-6deg);
 
   @media (max-width: 1100px) {
     height: 400px;
+    width: 280px;
     margin-right: 300px;
   }
 
   @media (max-width: 710px) {
     height: 300px;
+    width: 200px;
     margin-top: -64px;
     margin-right: 250px;
   }
 
   @media (max-width: 500px) {
     margin-top: -88px;
-    margin-right: 145px;
+    margin-right: 140px;
   }
 
   @media (max-width: 380px) {
     height: 250px;
+    width: 180px
   }
+`;
+
+const ImageBackgroundContainer = styled(CanvasContainer)`
+  z-index: -1;
 `;
 
 const Line = styled.span`
@@ -230,6 +252,8 @@ const Card = styled.div`
   background-color: #faf3f1;
 
   padding: 32px 40px;
+
+  z-index: 4;
 `;
 
 const CardText = styled.div`
@@ -320,7 +344,29 @@ const Intro: React.FC = () => {
         </FlexEndContainer>
       </TextContainer>
       <ImageContainer>
-        <Image />
+        <ImageBackgroundContainer>
+          <Image />
+        </ImageBackgroundContainer>
+        <CanvasContainer>
+          <CanvasDraw
+            style={{
+              position: "absolute",
+              height: "1000px",
+              width: "1000px",
+              transform: "rotate(6deg)",
+              marginLeft: "-100px",
+              marginTop: "-100px",
+            }}
+            brushColor="#cb3818"
+            hideInterface
+            lazyRadius={3}
+            brushRadius={4}
+            backgroundColor="rgba(255,0,0,0.0)"
+            hideGrid
+            canvasWidth={1000}
+            canvasHeight={1000}
+          />
+        </CanvasContainer>
         <LineSpacer />
         <Text>
           <Line>---&nbsp;&nbsp;</Line>ACK
