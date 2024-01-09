@@ -356,6 +356,7 @@ const Intro: React.FC = () => {
               transform: "rotate(6deg)",
               marginLeft: "-100px",
               marginTop: "-100px",
+              cursor: "pointer",
             }}
             brushColor="#cb3818"
             hideInterface
