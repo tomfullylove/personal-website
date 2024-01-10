@@ -32,13 +32,6 @@ const TextContainer = styled.div`
   }
 `;
 
-const FlexEndContainer = styled.div`
-  @media (max-width: 710px) {
-    align-self: flex-end;
-    margin-top: -32px;
-  }
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -63,13 +56,26 @@ const SplitTextContainer = styled.div`
   }
 `;
 
+interface TextProps {
+  flexEnd?: boolean;
+}
+
 const Text = styled.span.attrs({
   className: leagueGothic.className,
-})`
+})<TextProps>`
   font-size: 400px;
   color: #cb3818;
 
   transform: scale(1, 1.2);
+
+  ${(props) =>
+    props.flexEnd &&
+    `
+    @media (max-width: 710px) {
+    align-self: flex-end;
+    margin-top: -32px;
+  }
+  `}
 
   @media (max-width: 1100px) {
     font-size: 250px;
@@ -127,7 +133,7 @@ const CanvasContainer = styled.div`
 
   @media (max-width: 380px) {
     height: 250px;
-    width: 180px
+    width: 180px;
   }
 `;
 
@@ -339,9 +345,7 @@ const Intro: React.FC = () => {
     <Wrapper>
       <TextContainer>
         <Text>FULL&nbsp;</Text>
-        <FlexEndContainer>
-          <Text>ST</Text>
-        </FlexEndContainer>
+        <Text flexEnd>ST</Text>
       </TextContainer>
       <ImageContainer>
         <ImageBackgroundContainer>
