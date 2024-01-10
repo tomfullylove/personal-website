@@ -59,7 +59,7 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
   body {
-    background-color: #fffcfa;
+    background-color: #fffafa;
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
