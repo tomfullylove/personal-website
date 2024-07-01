@@ -379,7 +379,7 @@ const Intro: React.FC = () => {
       </ImageContainer>
       <CardContainer>
         <Card>
-          <CardText>Hey! 👋 I'm Tom, a dev based in Cardiff.</CardText>
+          <CardText>Hey! 👋 <Link href="/tom-fullylove-resume.pdf" target="_blank" rel="noreferrer">I'm Tom,</Link> a dev based in Cardiff.</CardText>
         </Card>
       </CardContainer>
       <SplitTextContainer>
