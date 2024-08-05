@@ -241,7 +241,10 @@ const ContentText = styled.div`
   }
 `;
 
-const CutContainer = styled.div`
+const CutContainer = styled.div.attrs({
+  "aria-hidden": "true",
+})`
+  user-select: none;
   margin-top: -270px;
 
   @media (max-width: 1100px) {
@@ -379,7 +382,18 @@ const Intro: React.FC = () => {
       </ImageContainer>
       <CardContainer>
         <Card>
-          <CardText>Hey! 👋 <Link href="/tom-fullylove-resume.pdf" target="_blank" rel="noreferrer">I'm Tom,</Link> a dev based in Cardiff.</CardText>
+          <CardText>
+            Hey! 👋{" "}
+            <Link
+              href="/tom-fullylove-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              title="My resume"
+            >
+              I'm Tom,
+            </Link>{" "}
+            a dev based in Cardiff.
+          </CardText>
         </Card>
       </CardContainer>
       <SplitTextContainer>
