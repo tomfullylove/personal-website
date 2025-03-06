@@ -123,6 +123,13 @@
       right: 25%;
     }
   }
+
+  --animate-aurora-border: aurora-border 6s infinite;
+
+  --animate-aurora-1: aurora-1 12s infinite;
+  --animate-aurora-2: aurora-2 12s infinite;
+  --animate-aurora-3: aurora-3 12s infinite;
+  --animate-aurora-4: aurora-4 12s infinite;
 }
 
 :root {
