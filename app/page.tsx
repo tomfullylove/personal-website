@@ -1,6 +1,6 @@
 import { Terminal } from "@/components/Terminal";
 
-import { AuroraText } from "@/components/magicui/aurora-text";
+import { AuroraText } from "@/components/AuroraText";
 
 export default function Home() {
   return (
