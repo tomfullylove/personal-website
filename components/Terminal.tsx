@@ -8,26 +8,26 @@ import {
 export function Terminal() {
   return (
     <MagicTerminal className="max-w-xl h-[308px]">
-      <TypingAnimation>&gt; npx tomfullylove init</TypingAnimation>
-      <AnimatedSpan delay={1500} className="text-green-500">
+      <TypingAnimation>&gt; tomfullylove init --build</TypingAnimation>
+      <AnimatedSpan delay={2000} className="text-green-500">
         <span>✔ Curled hair</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={2500} className="text-blue-500">
+      <AnimatedSpan delay={3000} className="text-blue-500">
         <span>ℹ Loading skills...</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={3500} className="text-muted-foreground pl-2">
+      <AnimatedSpan delay={4000} className="text-muted-foreground pl-2">
         <span>- Languages: Typescript, Python + Welsh 🏴󠁧󠁢󠁷󠁬󠁳󠁿</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={4000} className="text-muted-foreground pl-2">
+      <AnimatedSpan delay={4500} className="text-muted-foreground pl-2">
         <span>- Frontend: React, Redux + React Native</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={4500} className="text-muted-foreground pl-2">
+      <AnimatedSpan delay={5000} className="text-muted-foreground pl-2">
         <span>- Backend: Django, Flask + Node.js</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={5000} className="text-muted-foreground pl-2">
+      <AnimatedSpan delay={5500} className="text-muted-foreground pl-2">
         <span>- Infra: AWS, Terraform + Serverless Framework</span>
       </AnimatedSpan>
-      <AnimatedSpan delay={6000} className="text-green-500">
+      <AnimatedSpan delay={6500} className="text-green-500">
         <span>
           ✔ Created{" "}
           <Link
@@ -40,7 +40,7 @@ export function Terminal() {
           </Link>
         </span>
       </AnimatedSpan>
-      <AnimatedSpan delay={7000} className="text-green-500">
+      <AnimatedSpan delay={7500} className="text-green-500">
         <span>
           ✔ Linked to third parties:{" "}
           <Link
@@ -62,8 +62,8 @@ export function Terminal() {
           </Link>
         </span>
       </AnimatedSpan>
-      <TypingAnimation delay={8000} className="text-muted-foreground">
-        Done! Compiled in 6.6s
+      <TypingAnimation delay={8500} className="text-muted-foreground">
+        Done! Compiled in 6.72s
       </TypingAnimation>
     </MagicTerminal>
   );
