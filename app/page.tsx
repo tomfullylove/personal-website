@@ -4,7 +4,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4">
       <div className="flex">
         <div className="-rotate-8 z-2">
           <img
