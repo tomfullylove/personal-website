@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Tom Fullylove",
-  description: "",
+  description: "A full stack engineer with a love of problem solving and an affinity for design and UX, currently working at Veygo.",
 };
 
 export default function RootLayout({
