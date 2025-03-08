@@ -21,7 +21,7 @@ export function Bounce({ className, children, duration = 1, delay = 0 }: IBounce
     return (
         <motion.div
             className={cn("relative inline-flex overflow-hidden", className)}
-            initial={{ opacity: 0, y : -50 }}
+            initial={{ opacity: 0, y : -75 }}
             animate={{ opacity: 1, y: 0 }}
             transition={bounce}
         >
