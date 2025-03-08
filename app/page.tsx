@@ -1,6 +1,4 @@
-"use client"
-
-import { motion } from "motion/react";
+import * as motion from "motion/react-client"
 
 import { Terminal } from "@/components/Terminal";
 import { Bounce } from "@/components/animations/Bounce";
