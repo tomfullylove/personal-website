@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "motion/react";
+
 import { Terminal } from "@/components/Terminal";
 import { Bounce } from "@/components/animations/Bounce";
 
@@ -7,19 +11,35 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
       <div className="flex">
-        <div className="-rotate-8 z-2">
+        <motion.div
+          className="-rotate-8 z-2"
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            duration: 0.5,
+            delay: 0.3,
+          }}
+        >
           <img
             src="/me.jpg"
             className="w-[320px] min-w-[320px] h-[470px] min-h-[470px] rounded-2xl"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-col -ml-2">
           <h1 className="text-[160px] font-bold tracking-tighter">
-            <AuroraText><Bounce>full stack</Bounce></AuroraText>
+            <AuroraText><Bounce delay={0.5}>full stack</Bounce></AuroraText>
           </h1>
-          <h1 className="text-[160px] font-bold -mt-26 tracking-tighter z-1">
+          <motion.h1 
+            className="text-[160px] font-bold -mt-26 tracking-tighter z-1"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              duration: 1,
+            }}>
             engineer
-          </h1>
+          </motion.h1>
         </div>
       </div>
       <div className="-mt-28 z-2">

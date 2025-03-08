@@ -9,12 +9,14 @@ interface IBounce {
     className?: string;
     children: React.ReactNode;
     duration?: number;
+    delay?: number;
 }
 
-export function Bounce({ className, children, duration = 1 }: IBounce) {
+export function Bounce({ className, children, duration = 1, delay = 0 }: IBounce) {
     const bounce = {
         duration,
         ease: bounceEase,
+        delay: delay
     }
     return (
         <motion.div
