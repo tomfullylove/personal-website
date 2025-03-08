@@ -1,4 +1,5 @@
 import { Terminal } from "@/components/Terminal";
+import { Bounce } from "@/components/animations/Bounce";
 
 import { AuroraText } from "@/components/AuroraText";
 
@@ -14,7 +15,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col -ml-2">
           <h1 className="text-[160px] font-bold tracking-tighter">
-            <AuroraText>full stack</AuroraText>
+            <AuroraText><Bounce>full stack</Bounce></AuroraText>
           </h1>
           <h1 className="text-[160px] font-bold -mt-26 tracking-tighter z-1">
             engineer

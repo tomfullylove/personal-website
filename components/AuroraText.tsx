@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { motion, MotionProps } from "motion/react";
 import React from "react";
 
-interface AuroraTextProps
+interface IAuroraText
   extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps> {
   className?: string;
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export function AuroraText({
   children,
   as: Component = "span",
   ...props
-}: AuroraTextProps) {
+}: IAuroraText) {
   const MotionComponent = motion.create(Component);
 
   return (
