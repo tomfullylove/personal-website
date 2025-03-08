@@ -1,3 +1,4 @@
+import Image from "next/image";
 import * as motion from "motion/react-client"
 
 import { Terminal } from "@/components/Terminal";
@@ -19,9 +20,12 @@ export default function Home() {
             delay: 0.3,
           }}
         >
-          <img
+          <Image
+            className="rounded-2xl"
+            width={320}
+            height={470}
             src="/me.jpg"
-            className="w-[320px] min-w-[320px] h-[470px] min-h-[470px] rounded-2xl"
+            alt="me"
           />
         </motion.div>
         <div className="flex flex-col -ml-2">
