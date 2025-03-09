@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex items-center sm:flex-row sm:w-auto sm:max-w-full">
         <motion.div
           className="-rotate-8 z-2"
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
             type: "spring",
