@@ -7,7 +7,7 @@ import {
 
 export function Terminal() {
   return (
-    <MagicTerminal className="max-w-xl h-[308px]">
+    <MagicTerminal className="h-[308px]">
       <TypingAnimation delay={1000}>&gt; tomfullylove init --build</TypingAnimation>
       <AnimatedSpan delay={3000} className="text-green-500">
         <span>✔ Curled hair</span>
