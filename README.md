@@ -1,4 +1,3 @@
-## Personal website
+https://tomfullylove.com
 
-https://fullylove.co.uk/
-
+*I can write tests I swear..*
