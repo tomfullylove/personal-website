@@ -21,19 +21,19 @@ export default function Home() {
           }}
         >
           <Image
-            className="rounded-2xl"
+            className="rounded-2xl min-w-[180px] w-[180px] md:w-[240px] lg:w-[320px]"
             width={320}
             height={470}
             src="/me.jpg"
             alt="me"
           />
         </motion.div>
-        <div className="flex flex-col -ml-2">
-          <h1 className="text-[160px] font-bold tracking-tighter">
+        <div className="flex flex-col -ml-0 md:-ml-2">
+          <h1 className="text-[90px] font-bold tracking-tighter md:text-[110px] lg:text-[160px]">
             <AuroraText><Bounce delay={0.5}>full stack</Bounce></AuroraText>
           </h1>
           <motion.h1 
-            className="text-[160px] font-bold -mt-26 tracking-tighter z-1"
+            className="text-[90px] font-bold -mt-15 tracking-tighter z-1 md:text-[110px] md:-mt-18 lg:text-[160px] lg:-mt-26"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -44,7 +44,7 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
-      <div className="-mt-28 z-2">
+      <div className="-mt-16 md:-mt-20 lg:-mt-28 z-2">
         <Terminal />
       </div>
     </div>
