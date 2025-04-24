@@ -22,7 +22,7 @@ export function Terminal() {
         <span>- Frontend: React, Redux + React Native</span>
       </AnimatedSpan>
       <AnimatedSpan delay={6000} className="text-muted-foreground pl-2">
-        <span>- Backend: Django, Flask + Node.js</span>
+        <span>- Backend: GraphQL, Node.js, Django + Flask</span>
       </AnimatedSpan>
       <AnimatedSpan delay={6500} className="text-muted-foreground pl-2">
         <span>- Infra: AWS, Terraform + Serverless Framework</span>

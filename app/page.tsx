@@ -30,9 +30,9 @@ export default function Home() {
         </motion.div>
         <div className="flex flex-col sm:mt-0 -ml-0 md:-ml-2">
           <h1 className="text-[65px] font-bold tracking-tighter sm:text-[90px] md:text-[110px] lg:text-[160px]">
-            <AuroraText><Bounce delay={0.5}>full stack</Bounce></AuroraText>
+            <AuroraText><Bounce delay={0.3}>full stack</Bounce></AuroraText>
           </h1>
-          <motion.h1 
+          <motion.h1
             className="text-[65px] font-bold -mt-10 tracking-tighter z-1 sm:text-[90px] sm:-mt-15 md:text-[110px] md:-mt-18 lg:text-[160px] lg:-mt-26"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
