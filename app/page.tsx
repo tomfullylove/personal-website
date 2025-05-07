@@ -24,7 +24,7 @@ export default function Home() {
             className="rounded-2xl min-w-[120px] w-[180px] md:w-[240px] lg:w-[320px]"
             width={320}
             height={470}
-            src="/me.jpg"
+            src="/me.webp"
             alt="me"
           />
         </motion.div>
