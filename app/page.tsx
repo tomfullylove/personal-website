@@ -21,7 +21,7 @@ export default function Home() {
           }}
         >
           <Image
-            className="rounded-2xl min-w-[120px] w-[180px] md:w-[240px] lg:w-[320px]"
+            className="rounded-2xl min-w-[120px] w-[140px] sm:w-[200px] md:w-[240px] lg:w-[320px]"
             width={320}
             height={470}
             src="/me.webp"
@@ -30,7 +30,7 @@ export default function Home() {
         </motion.div>
         <div className="flex flex-col sm:mt-0 ml-1 md:ml-2">
           <h1 className="text-[65px] tracking-[-.75rem] font-bold sm:tracking-[-1.5rem] sm:text-[110px] md:text-[120px] lg:tracking-[-2rem] lg:text-[150px]" style={{ wordSpacing: '-.6em' }}>
-            <AuroraText><Bounce delay={0.3}>full stack&nbsp;</Bounce></AuroraText>
+            <AuroraText><Bounce delay={0.3}>full stack</Bounce></AuroraText>
           </h1>
           <motion.h1
             className="text-[65px] tracking-[-.75rem] font-bold -mt-10 z-1 sm:tracking-[-1.5rem] sm:text-[110px] sm:-mt-15 md:text-[120px] md:-mt-18 lg:tracking-[-2rem] lg:text-[150px] lg:-mt-26"
@@ -44,7 +44,7 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
-      <div className="-mt-6 sm:-mt-8 md:-mt-14 lg:-mt-16 z-2">
+      <div className="-mt-2 md:-mt-10 lg:-mt-16 z-2">
         <Terminal />
       </div>
     </div>
