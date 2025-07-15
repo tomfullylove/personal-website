@@ -28,12 +28,12 @@ export default function Home() {
             alt="me"
           />
         </motion.div>
-        <div className="flex flex-col sm:mt-0 -ml-0 md:-ml-2">
-          <h1 className="text-[65px] font-bold tracking-tighter sm:text-[90px] md:text-[110px] lg:text-[160px]">
+        <div className="flex flex-col sm:mt-0 ml-1 md:ml-2">
+          <h1 className="text-[65px] tracking-[-.75rem] font-bold sm:tracking-[-1.5rem] sm:text-[110px] md:text-[120px] lg:tracking-[-2rem] lg:text-[150px]" style={{ wordSpacing: '-.6em' }}>
             <AuroraText><Bounce delay={0.3}>full stack</Bounce></AuroraText>
           </h1>
           <motion.h1
-            className="text-[65px] font-bold -mt-10 tracking-tighter z-1 sm:text-[90px] sm:-mt-15 md:text-[110px] md:-mt-18 lg:text-[160px] lg:-mt-26"
+            className="text-[65px] tracking-[-.75rem] font-bold -mt-10 z-1 sm:tracking-[-1.5rem] sm:text-[110px] sm:-mt-15 md:text-[120px] md:-mt-18 lg:tracking-[-2rem] lg:text-[150px] lg:-mt-26"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -44,7 +44,7 @@ export default function Home() {
           </motion.h1>
         </div>
       </div>
-      <div className="-mt-4 sm:-mt-8 md:-mt-14 lg:-mt-16 z-2">
+      <div className="-mt-6 sm:-mt-8 md:-mt-14 lg:-mt-16 z-2">
         <Terminal />
       </div>
     </div>
