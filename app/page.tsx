@@ -30,7 +30,7 @@ export default function Home() {
         </motion.div>
         <div className="flex flex-col sm:mt-0 ml-1 md:ml-2">
           <h1 className="text-[65px] tracking-[-.75rem] font-bold sm:tracking-[-1.5rem] sm:text-[110px] md:text-[120px] lg:tracking-[-2rem] lg:text-[150px]" style={{ wordSpacing: '-.6em' }}>
-            <AuroraText><Bounce delay={0.3}>full stack</Bounce></AuroraText>
+            <AuroraText><Bounce delay={0.3}>full stack&nbsp;</Bounce></AuroraText>
           </h1>
           <motion.h1
             className="text-[65px] tracking-[-.75rem] font-bold -mt-10 z-1 sm:tracking-[-1.5rem] sm:text-[110px] sm:-mt-15 md:text-[120px] md:-mt-18 lg:tracking-[-2rem] lg:text-[150px] lg:-mt-26"
