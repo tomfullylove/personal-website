@@ -11,7 +11,7 @@ const rock3d = Rock_3D({
 
 export const metadata: Metadata = {
   title: "Tom Fullylove",
-  description: "Hey 👋 I build full stack apps. I’m always learning, enjoy solving tricky problems, and have a thing for great user-centric design and experiences.",
+  description: "Hey! 👋 I build full-stack apps. I’m always learning, enjoy solving tricky problems and have a thing for great user-centric design and experiences.",
 };
 
 export default function RootLayout({
