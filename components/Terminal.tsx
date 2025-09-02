@@ -53,7 +53,7 @@ export function Terminal() {
           </Link>{" "}
           +{" "}
           <Link
-            href="https://www.linkedin.com/in/tom-fullylove-6a382a189/"
+            href="https://www.linkedin.com/in/tom-f-6a382a189/"
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
