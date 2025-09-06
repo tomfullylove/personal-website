@@ -53,12 +53,12 @@ export function Terminal() {
           </Link>{" "}
           +{" "}
           <Link
-            href="https://www.linkedin.com/in/tom-f-6a382a189/"
+            href="https://medium.com/@tomfullylove"
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            linkedin.com
+            medium.com
           </Link>
         </span>
       </AnimatedSpan>
