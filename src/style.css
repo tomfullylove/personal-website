@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terminal-content {
+  font-family: monospace, monospace;
+  font-size: 12px;
+}
+
+.terminal-content > span {
+  color: var(--font-color);
+  padding-left: calc(var(--offset)*12px);
+}
+
+#terminal-line-11::after {
+  content: "_";
+  display: inline-block;
+  animation: blink 1.5s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { opacity: 0; }
+}
