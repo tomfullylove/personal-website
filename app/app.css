@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: var(--background);
+    --color-background-alt: var(--background-alt);
+    --color-background-inverse: var(--background-inverse);
+    --color-foreground: var(--foreground);
+    --color-foreground-inverse: var(--foreground-inverse);
+    --color-border: var(--border);
+
+    --color-red: var(--red);
+    --color-yellow: var(--yellow);
+}
+
+:root {
+    --background: theme(colors.white);
+    --background-inverse: theme(colors.black);
+    --background-alt: theme(colors.gray.100);
+    --foreground: theme(colors.black);
+    --foreground-inverse: theme(colors.white);
+    --border: theme(colors.gray.300);
+
+    --red: theme(colors.red.500);
+    --yellow: theme(colors.yellow.500);
+}
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    user-select: none;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+}
+
+div {
+    overscroll-behavior: none;
+}
+
+@keyframes cursor-blink {
+    0%, 50% { opacity: 1; }
+    50.01%, 100% { opacity: 0; }
+  }
