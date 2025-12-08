@@ -112,7 +112,7 @@ export function GoogleDocs() {
                                     <div className="flex flex-col gap-4 pt-2">
                                         <p>
                                             I started my professional journey here, joining an amazing team of
-                                            engineers. Gaining experience with React, Django and AWS as part
+                                            engineers. Gaining experience with React, React Native, Django and AWS as part
                                             of an Agile Scrum team. I worked on multiple cross-functional
                                             teams and projects, from delivering new insurance products to
                                             building scalable backend services and APIs in our move to a
