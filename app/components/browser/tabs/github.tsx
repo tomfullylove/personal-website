@@ -1,6 +1,6 @@
 export function Github() {
     return (
-        <div className="flex flex-col text-black text-xs bg-white h-full sm:text-sm md:text-base">
+        <a href="https://github.com/tomfullylove" target="_blank" className="flex flex-col text-black text-xs bg-white h-full sm:text-sm md:text-base">
             <div className="flex flex-row justify-between items-center bg-neutral-800 px-4 py-2  border border-b-gray-300 border-gray-200">
                 <div className="flex flex-row gap-3 items-center">
                     <p className="text-white text-base sm:text-xl md:text-2xl font-bold">Github</p>
@@ -18,7 +18,7 @@ export function Github() {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                            <a href="https://github.com/tomfullylove/personal-website" target="_blank" className="flex flex-col flex-1 p-4 cursor-pointer border-b border-gray-200 gap-1">
+                            <div className="flex flex-col flex-1 p-4 border-b border-gray-200 gap-1">
                                 <div className="flex flex-row gap-2 items-center">
                                     <img src="./book.svg" className="w-4 h-auto" />
                                     <a className="text-blue-500 pointer-cursor mt-[-2px]" >personal-website</a>
@@ -28,7 +28,7 @@ export function Github() {
                                     <div className="h-2 w-2 rounded-full bg-blue-800" />
                                     <p className="text-xs text-gray-500">typescript</p>
                                 </div>
-                            </a>
+                            </div>
                             <div className="flex flex-col p-4 border-b border-gray-200 gap-1">
                                 <div className="flex flex-row gap-2 items-center">
                                     <img src="./book.svg" className="w-4 h-auto" />
@@ -66,6 +66,6 @@ export function Github() {
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }

@@ -22,7 +22,7 @@ export function Medium() {
     }, []);
 
     return (
-        <div className="flex flex-col text-black text-xs bg-white h-full sm:text-sm md:text-base">
+        <a href="https://medium.com/@tomfullylove" target="_blank" className="flex flex-col text-black text-xs bg-white h-full sm:text-sm md:text-base">
             <div className="flex flex-row justify-between items-center bg-white px-4 py-2  border border-b-gray-300 border-gray-200">
                 <div className="flex flex-row gap-3 items-center">
                     <div className="flex flex-col gap-[3px]">
@@ -43,7 +43,7 @@ export function Medium() {
             <div className="flex flex-col items-center h-full">
                 <div className="flex flex-col max-w-160 p-12">
                     <p className="text-2xl w-full sm:text-3xl md:text-4xl font-bold">My stories</p>
-                    <a href="https://medium.com/@tomfullylove/building-a-digital-camera-a17abc60174d" target="_blank" className="flex flex-row w-full py-6 justify-between items-start gap-2 sm:gap-8 border-gray-200 border-b">
+                    <div className="flex flex-row w-full py-6 justify-between items-start gap-2 sm:gap-8 border-gray-200 border-b">
                         <div className="flex flex-col">
                             <p className="text-base sm:text-lg md:text-xl font-bold underline">Building a digital camera.</p>
                             <p className="text-xs sm:text-sm md:text-base">A "guide" to building a digital camera with a raspberry pi.</p>
@@ -59,9 +59,9 @@ export function Medium() {
                             </div>
                         </div>
                         <img src="./medium-post-1.png" className="max-w-20 max-h-12 sm:max-w-32 sm:max-h-20 bg-gray-200 mt-2" />
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }

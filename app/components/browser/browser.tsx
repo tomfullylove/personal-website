@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Window } from "~/components/window";
 
-import { GoogleDocs, Pornhub, Medium, Github } from "./tabs";
+import { GoogleDocs, Verify, Medium, Github } from "./tabs";
 
 const TABS = [
     {
@@ -20,9 +20,9 @@ const TABS = [
         component: <Github />,
     },
     {
-        url: "https://xxx.com",
-        name: "XXX",
-        component: <Pornhub />,
+        url: "https://hmmm.com",
+        name: "...",
+        component: <Verify />,
     }
 ]
 

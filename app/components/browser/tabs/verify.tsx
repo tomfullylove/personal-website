@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Pornhub() {
+export function Verify() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showError, setShowError] = useState(false);
     return (

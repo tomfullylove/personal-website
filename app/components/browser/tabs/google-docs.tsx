@@ -45,7 +45,7 @@ function TypedText() {
 
 export function GoogleDocs() {
     return (
-        <div className="flex flex-col text-black text-xs sm:text-sm md:text-base">
+        <a href="/tom-fullylove-resume.pdf" target="_blank" className="flex flex-col text-black text-xs sm:text-sm md:text-base">
             <div className="flex flex-row justify-between items-center bg-white p-4 border border-b-gray-300 border-gray-200">
                 <div className="flex flex-row gap-2 items-center">
                     <p className="text-xs sm:text-lg md:text-xl font-bold">Resume v86.4 (FINAL)</p>
@@ -56,7 +56,7 @@ export function GoogleDocs() {
                         <div className="h-6 w-6 pt-1 sm:pt-[2px] md:pt-0 rounded-full bg-gray-200 text-white text-center">A</div>
                         <div className="h-6 w-6 pt-1 sm:pt-[2px] md:pt-0 rounded-full bg-emerald-700 text-white text-center -ml-3">TF</div>
                     </div>
-                    <a href="/tom-fullylove-resume.pdf" target="_blank" className="rounded-full bg-blue-500 text-white px-4 py-2 hover:underline hover:bg-blue-600 cursor-pointer">Download</a>
+                    <p className="rounded-full bg-blue-500 text-white px-4 py-2 hover:underline hover:bg-blue-600 cursor-pointer">Download</p>
                 </div>
             </div>
             <div className="flex flex-col items-center bg-gray-200">
@@ -76,7 +76,7 @@ export function GoogleDocs() {
                         <div className="flex flex-col p-1 gap-2 flex-3">
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Experience</h3>
                             <div className="flex flex-col gap-2">
-                                <a href="https://www.veygo.com" target="_blank" className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Veygo by Admiral</a>
+                                <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Veygo by Admiral</p>
                                 <div className="flex flex-col sm:pl-4">
                                     <p className="text-base sm:text-lg md:text-xl  font-bold">Senior Full Stack Engineer</p>
                                     <p className="font-bold">July 2025 - Now</p>
@@ -151,6 +151,6 @@ export function GoogleDocs() {
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
