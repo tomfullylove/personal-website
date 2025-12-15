@@ -19,11 +19,11 @@ const TABS = [
         name: "Github",
         component: <Github />,
     },
-    {
-        url: "https://hmmm.com",
-        name: "...",
-        component: <Verify />,
-    }
+    // {
+    //     url: "https://hmmm.com",
+    //     name: "...",
+    //     component: <Verify />,
+    // }
 ]
 
 const PADDING = 16;
