@@ -77,14 +77,14 @@ export function GoogleDocs() {
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Experience</h3>
                             <div className="flex flex-col gap-2">
                                 <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Our Future Health</p>
-                                <div className="flex flex-col sm:pl-2">
+                                <div className="flex flex-col">
                                     <p className="text-base sm:text-lg md:text-xl  font-bold">Full Stack Engineer</p>
                                     <p className="font-bold">March 2026 - Now</p>
                                     <div className="flex flex-col gap-4 pt-2">
                                     </div>
                                 </div>
                                 <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Veygo by Admiral</p>
-                                <div className="flex flex-col sm:pl-2">
+                                <div className="flex flex-col">
                                     <p className="text-base sm:text-lg md:text-xl  font-bold">Senior Full Stack Engineer</p>
                                     <p className="font-bold">July 2025 - March 2026</p>
                                     <div className="flex flex-col gap-4 pt-2">
@@ -107,7 +107,7 @@ export function GoogleDocs() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col sm:pl-2">
+                                <div className="flex flex-col">
                                     <p className="text-base sm:text-lg md:text-xl font-bold">Full Stack Engineer</p>
                                     <p className="font-bold">July 2019 - June 2025</p>
                                     <div className="flex flex-col gap-4 pt-2">
