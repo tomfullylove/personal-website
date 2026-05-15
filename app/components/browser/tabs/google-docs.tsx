@@ -7,39 +7,39 @@ function TypedText() {
     const [direction, setDirection] = useState("forward");
 
     useEffect(() => {
-      const current = phrases[index];
+        const current = phrases[index];
 
-      if (direction === "forward" && subIndex < current.length) {
-        const timeout = setTimeout(() => setSubIndex(subIndex + 1), 70);
-        return () => clearTimeout(timeout);
-      }
+        if (direction === "forward" && subIndex < current.length) {
+            const timeout = setTimeout(() => setSubIndex(subIndex + 1), 70);
+            return () => clearTimeout(timeout);
+        }
 
-      if (direction === "forward" && subIndex === current.length) {
-        const timeout = setTimeout(() => setDirection("backward"), 1200);
-        return () => clearTimeout(timeout);
-      }
+        if (direction === "forward" && subIndex === current.length) {
+            const timeout = setTimeout(() => setDirection("backward"), 1200);
+            return () => clearTimeout(timeout);
+        }
 
-      if (direction === "backward" && subIndex > 0) {
-        const timeout = setTimeout(() => setSubIndex(subIndex - 1), 40);
-        return () => clearTimeout(timeout);
-      }
+        if (direction === "backward" && subIndex > 0) {
+            const timeout = setTimeout(() => setSubIndex(subIndex - 1), 40);
+            return () => clearTimeout(timeout);
+        }
 
-      if (direction === "backward" && subIndex === 0) {
-        const timeout = setTimeout(() => {
-          setIndex((index + 1) % phrases.length);
-          setDirection("forward");
-        }, 300);
-        return () => clearTimeout(timeout);
-      }
+        if (direction === "backward" && subIndex === 0) {
+            const timeout = setTimeout(() => {
+                setIndex((index + 1) % phrases.length);
+                setDirection("forward");
+            }, 300);
+            return () => clearTimeout(timeout);
+        }
     }, [subIndex, index, direction]);
 
     return (
-      <span className="relative inline-block">
-        &nbsp;{phrases[index].substring(0, subIndex)}
-        <span className="text-emerald-700 text-base sm:text-xl md:text-2xl inline-block -mt-[4px] absolute animate-[cursor-blink_1s_step-end_infinite]">
-          l
+        <span className="relative inline-block">
+            &nbsp;{phrases[index].substring(0, subIndex)}
+            <span className="text-emerald-700 text-base sm:text-xl md:text-2xl inline-block -mt-[4px] absolute animate-[cursor-blink_1s_step-end_infinite]">
+                l
+            </span>
         </span>
-      </span>
     );
 }
 
@@ -76,54 +76,55 @@ export function GoogleDocs() {
                         <div className="flex flex-col p-1 gap-2 flex-3">
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Experience</h3>
                             <div className="flex flex-col gap-2">
+                                <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Our Future Health</p>
+                                <div className="flex flex-col sm:pl-2">
+                                    <p className="text-base sm:text-lg md:text-xl  font-bold">Full Stack Engineer</p>
+                                    <p className="font-bold">March 2026 - Now</p>
+                                    <div className="flex flex-col gap-4 pt-2">
+                                    </div>
+                                </div>
                                 <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Veygo by Admiral</p>
-                                <div className="flex flex-col sm:pl-4">
+                                <div className="flex flex-col sm:pl-2">
                                     <p className="text-base sm:text-lg md:text-xl  font-bold">Senior Full Stack Engineer</p>
-                                    <p className="font-bold">July 2025 - Now</p>
+                                    <p className="font-bold">July 2025 - March 2026</p>
                                     <div className="flex flex-col gap-4 pt-2">
                                         <p>
-                                            I'm currently leading the rebuild of our quote-to-buy web journey,
-                                            which has solved key business problems and revolutionised how we
-                                            serve our customers. As part of this, I investigated new technologies
-                                            and architectures, such as GraphQL, to increase flexibility and
-                                            dramatically speed up experimentation through A/B testing. I also
-                                            created a new component library, resulting in better customer
-                                            experiences and greater alignment with the design team.
+                                            I led the rebuild of our quote-to-buy web journey,
+                                            which solved key business problems and revolutionised how we
+                                            serve our customers. As part of this, I introduced new technologies
+                                            and architectures, such as a new design system and GraphQL, to increase
+                                            flexibility and dramatically speed up experimentation through A/B
+                                            testing. All of which has led to significant improvements to both conversion
+                                            (to purchase) and performance.
                                         </p>
                                         <p>
-                                            During the rebuild, I led the end-to-end development of the first new
-                                            customer journey, from discovery through to (successful) release.
-                                            This has enabled customers to purchase via price-comparison
-                                            websites for the first time, opening up an entirely new audience
-                                            while validating our new architecture in production.
-                                        </p>
-                                        <p>
-                                            Mentoring and coaching are also an important part of my role, both
-                                            ad hoc within teams and more formally through regular catch-ups
-                                            and sessions. And I've also worked on engineering-wide initiatives,
-                                            helping set engineering principles and establishing conventions for
-                                            all aspects of development at Veygo, from testing to pull requests.
+                                            Mentoring and coaching were also an important part of my role, both
+                                            ad hoc within teams and more formally during onboarding and through
+                                            regular catch-ups and sessions. I also worked on engineering-wide
+                                            initiatives, helping set engineering principles and establishing
+                                            conventions for all aspects of development at Veygo, from testing
+                                            to pull requests.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col sm:pl-4">
+                                <div className="flex flex-col sm:pl-2">
                                     <p className="text-base sm:text-lg md:text-xl font-bold">Full Stack Engineer</p>
                                     <p className="font-bold">July 2019 - June 2025</p>
                                     <div className="flex flex-col gap-4 pt-2">
                                         <p>
                                             I started my professional journey here, joining an amazing team of
-                                            engineers. Gaining experience with React, React Native, Django and AWS as part
-                                            of an Agile Scrum team. I worked on multiple cross-functional
-                                            teams and projects, from delivering new insurance products to
-                                            building scalable backend services and APIs in our move to a
-                                            serverless architecture.
+                                            engineers. Gaining experience with React, React Native, Django
+                                            and AWS as part of an Agile Scrum team. I worked on multiple
+                                            cross-functional teams, from delivering new insurance products
+                                            to building scalable backend services and APIs in a move to
+                                            a serverless (microservice) architecture.
                                         </p>
                                         <p>
                                             Taken the lead on several projects, including redesigns of key
                                             customer journeys, which have led to improved conversion and UX.
                                             And delivering a brand-new telematics product, building the
                                             end-to-end web journeys and the backend systems that support
-                                            customers on our new subscription-based offering.
+                                            customers on a new subscription-based offering.
                                         </p>
                                     </div>
                                 </div>
@@ -136,11 +137,12 @@ export function GoogleDocs() {
                                 <p className="pl-1">Typecript & Python</p>
                                 <p className="font-bold pt-1">Frontend</p>
                                 <p className="pl-1">
-                                    React, Redux, CSS, Tailwind, RTL & Cypress
+                                    React (Next, React Router & React Native), CSS, Tailwind, Redux,
+                                    RTL & Cypress
                                 </p>
                                 <p className="text-base sm:text-lg md:text-xl font-bold pt-1">Backend</p>
                                 <p className="pl-1">
-                                    Node.js, Django, Flask, GraphQL & Temporal
+                                    Node.js, Django, Fast API, GraphQL & Temporal
                                 </p>
                                 <p className="text-base sm:text-lg md:text-xl font-bold pt-1">Infra</p>
                                 <p className="pl-1">
