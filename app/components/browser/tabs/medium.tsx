@@ -45,12 +45,28 @@ export function Medium() {
                     <p className="text-2xl w-full sm:text-3xl md:text-4xl font-bold">My stories</p>
                     <div className="flex flex-row w-full py-6 justify-between items-start gap-2 sm:gap-8 border-gray-200 border-b">
                         <div className="flex flex-col">
+                            <p className="text-base sm:text-lg md:text-xl font-bold underline">How I built an app with AI</p>
+                            <p className="text-xs sm:text-sm md:text-base">Like everyone else online, I’ve just built an app (with quite a bit of help from Claude).</p>
+                            <div className="flex flex-row pt-2">
+                                <div className="flex flex-row items-center gap-1 min-w-20">
+                                    <img src="./heart.svg" className="w-5 h-auto" />
+                                    <p>{formatNumber(heartCount)}</p>
+                                </div>
+                                <div className="flex flex-row items-center gap-1">
+                                    <img src="./comment.svg" className="w-5 h-auto" />
+                                    <p>{12}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-row w-full py-6 justify-between items-start gap-2 sm:gap-8 border-gray-200 border-b">
+                        <div className="flex flex-col">
                             <p className="text-base sm:text-lg md:text-xl font-bold underline">Building a digital camera.</p>
                             <p className="text-xs sm:text-sm md:text-base">A "guide" to building a digital camera with a raspberry pi.</p>
                             <div className="flex flex-row pt-2">
                                 <div className="flex flex-row items-center gap-1 min-w-20">
                                     <img src="./heart.svg" className="w-5 h-auto" />
-                                    <p>{formatNumber(heartCount)}</p>
+                                    <p>{formatNumber(heartCount / 2)}</p>
                                 </div>
                                 <div className="flex flex-row items-center gap-1">
                                     <img src="./comment.svg" className="w-5 h-auto" />
