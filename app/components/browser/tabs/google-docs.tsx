@@ -72,6 +72,10 @@ export function GoogleDocs() {
                         Hey! 👋 I build <TypedText />&nbsp;&nbsp;  I'm always learning, enjoy solving tricky problems and have a
                         thing for great user-centric design and experiences.
                     </p>
+                    <p className="px-2">
+                        I’ve also recently started writing which I’m thoroughly enjoying, documenting anything from random
+                        electronics projects to how I’ve released an iOS app with some help from AI coding tools.
+                    </p>
                     <div className="flex flex-col sm:flex-row">
                         <div className="flex flex-col p-1 gap-2 flex-3">
                             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Experience</h3>
@@ -81,6 +85,18 @@ export function GoogleDocs() {
                                     <p className="text-base sm:text-lg md:text-xl  font-bold">Full Stack Engineer</p>
                                     <p className="font-bold">March 2026 - Now</p>
                                     <div className="flex flex-col gap-4 pt-2">
+                                        <p>
+                                            Working as part of a small but very cross functional team (from design to science)
+                                            building out a new health questionnaires platform for the organisation.
+                                        </p>
+                                        <p>
+                                            I have also worked across the full stack of a new system and customer journey through
+                                            to its successful release, gaining new experiences with database management and
+                                            Kubernetes. As part of this I introduced improvements to web accessibility along
+                                            with automated checks to keep standards within the team, and end-to-end smoke tests
+                                            run as part of delivery pipelines (Github Actions), giving the team more confidence
+                                            in releases across distributed repos.
+                                        </p>
                                     </div>
                                 </div>
                                 <p className="text-lg sm:text-xl md:text-2xl font-bold text-blue-600 underline">Veygo by Admiral</p>
@@ -89,21 +105,26 @@ export function GoogleDocs() {
                                     <p className="font-bold">July 2025 - March 2026</p>
                                     <div className="flex flex-col gap-4 pt-2">
                                         <p>
-                                            I led the rebuild of our quote-to-buy web journey,
-                                            which solved key business problems and revolutionised how we
-                                            serve our customers. As part of this, I introduced new technologies
-                                            and architectures, such as a new design system and GraphQL, to increase
-                                            flexibility and dramatically speed up experimentation through A/B
-                                            testing. All of which has led to significant improvements to both conversion
-                                            (to purchase) and performance.
+                                            I led the rebuild of our quote-to-buy web app and journey, which solved key business
+                                            problems and revolutionised how we serve our customers. As part of this, I introduced
+                                            new technologies and architectures, such as a new design system and GraphQL to increase
+                                            flexibility and dramatically speed up experimentation through A/B testing. I defined
+                                            milestones and the slices of work ensuring we delivered value quickly to the business
+                                            and our customers, working closely with the leadership team to define and manage
+                                            expectations and timelines. All of which has led to significant improvements to
+                                            conversion (to purchase), observability and performance.
                                         </p>
                                         <p>
-                                            Mentoring and coaching were also an important part of my role, both
-                                            ad hoc within teams and more formally during onboarding and through
-                                            regular catch-ups and sessions. I also worked on engineering-wide
-                                            initiatives, helping set engineering principles and establishing
-                                            conventions for all aspects of development at Veygo, from testing
-                                            to pull requests.
+                                            Worked as co-lead of the web development engineering chapter, setting standards from
+                                            accessibility to code quality along with managing a shared backlog of bugs and
+                                            security updates. I also ran sessions introducing concepts to the wider engineering
+                                            team, like GraphQL.
+                                        </p>
+                                        <p>
+                                            Mentoring and coaching were an important part of my role, both ad hoc within teams
+                                            and more formally during onboarding and regular catch-ups. I also worked on
+                                            engineering-wide initiatives, helping set principles and establishing conventions
+                                            for all aspects of engineering, from testing to pull requests.
                                         </p>
                                     </div>
                                 </div>
@@ -112,19 +133,16 @@ export function GoogleDocs() {
                                     <p className="font-bold">July 2019 - June 2025</p>
                                     <div className="flex flex-col gap-4 pt-2">
                                         <p>
-                                            I started my professional journey here, joining an amazing team of
-                                            engineers. Gaining experience with React, React Native, Django
-                                            and AWS as part of an Agile Scrum team. I worked on multiple
-                                            cross-functional teams, from delivering new insurance products
-                                            to building scalable backend services and APIs in a move to
-                                            a serverless (microservice) architecture.
+                                            I started my professional journey here, joining an amazing team of engineers.
+                                            Gaining experience with React, React Native, Django and AWS as part of an Agile
+                                            scrum team. I worked on multiple cross-functional teams, from delivering new
+                                            insurance products, web and mobile app experiences, to building scalable backend
+                                            services and APIs in a move to a serverless (microservice) architecture.
                                         </p>
                                         <p>
-                                            Taken the lead on several projects, including redesigns of key
-                                            customer journeys, which have led to improved conversion and UX.
-                                            And delivering a brand-new telematics product, building the
-                                            end-to-end web journeys and the backend systems that support
-                                            customers on a new subscription-based offering.
+                                            Took the lead on several projects, including redesigns of key customer web journeys,
+                                            which have led to improved conversion and UX. And delivering a brand-new telematics
+                                            product that supports customers on a new subscription-based offering.
                                         </p>
                                     </div>
                                 </div>
